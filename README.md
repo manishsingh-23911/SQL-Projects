@@ -43,9 +43,9 @@ CREATE TABLE retail_sales
 - **preview data and check the number of rows**
 ```
 SELECT * FROM retail_sales
-LIMIT 10
+LIMIT 10;
 
-SELECT COUNT (*) FROM retail_sales
+SELECT COUNT (*) FROM retail_sales;
 ```
 
 ### 2. Data Cleaning
@@ -74,7 +74,7 @@ WHERE
 	OR
 	cogs IS NULL
 	OR 
-	total_sale IS NULL
+	total_sale IS NULL;
 ```
 - Deleting rows which have null values (ignoring null values for age)
      Check results before committing
@@ -94,19 +94,21 @@ COMMIT;
 ### 3. Data Exploration
 - How many sales do we have?
 ```
-SELECT COUNT(*) FROM retail_sales
--- or:  
-SELECT COUNT(transactions_id) FROM retail_sales
+SELECT COUNT(*) FROM retail_sales;
+```
+ -or:
+```
+SELECT COUNT(transactions_id) FROM retail_sales;
 ```
 
 - How many customers do we have?
 ```
-SELECT COUNT(DISTINCT customer_id) FROM retail_sales
+SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
 ```
 
 - what product categories do we have?
 ```
-SELECT DISTINCT category FROM retail_sales
+SELECT DISTINCT category FROM retail_sales;
 ```
 
 
