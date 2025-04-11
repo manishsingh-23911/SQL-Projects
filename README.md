@@ -161,7 +161,7 @@ SELECT * FROM retail_sales
 WHERE total_sale > 1000;
 ```
 
-7. **find out total number of transactions made by each gender in each category **:
+7. **find out total number of transactions made by each gender in each category**:
 ```sql
 SELECT gender, category, COUNT(transactions_id) as total_transactions
 FROM retail_sales 
